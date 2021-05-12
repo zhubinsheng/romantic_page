@@ -1,0 +1,11 @@
+version: '2'
+services:
+  love_timer:
+    network_mode: "host"
+    build:
+      context: ./
+    container_name: Love_timer
+    hostname: Love_timer
+    restart: on-failure
+    environment:
+      - TZ=Asia/Shanghai
